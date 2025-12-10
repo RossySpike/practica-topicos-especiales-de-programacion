@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "c86a5a2f-4e60-4e21-871b-5f7b94b0d510",
+		"name": "Practica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10999360"
+	},
+	"item": [
+		{
+			"name": "Crear usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Pedro\",\r\n    \"lastName\": \"Reyes\",\r\n    \"password\": \"El pedro miguel\",\r\n    \"username\": \"pedromiguel\",\r\n    \"role\": \"ADMIN\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3005/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

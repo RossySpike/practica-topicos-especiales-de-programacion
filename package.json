@@ -1,0 +1,27 @@
+{
+  "name": "api-rest-johnny",
+  "version": "1.0.0",
+  "description": "API REST",
+  "type": "module",
+  "homepage": "https://github.com/RossySpike/practica-topicos-especiales-de-programacion#readme",
+  "bugs": {
+    "url": "https://github.com/RossySpike/practica-topicos-especiales-de-programacion/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RossySpike/practica-topicos-especiales-de-programacion.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.1"
+  }
+}
