@@ -2,9 +2,9 @@ version: "3"
 
 services:
   web:
-    image: ${CURRENT_IMAGE}
     container_name: node_audit
     restart: always
+    build: .
     env_file: .env
     environment:
       - MONGO_USERNAME=$MONGO_USERNAME
@@ -22,7 +22,6 @@ services:
       - nolatech_net_test
     volumes:
       - .:/usr/src/app
-      - /usr/src/app/node_modules
 
   mongo:
     container_name: mongo_audit
@@ -40,6 +39,7 @@ services:
 
 volumes:
   mongodata:
+  node_modules:
 
 networks:
   nolatech_net_test:
